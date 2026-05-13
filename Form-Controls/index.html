@@ -26,44 +26,92 @@
 
         <div class="form-group">
           <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" required>
+          <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  required
+                  pattern=""
+                  title=""
+          >
         </div>
 
         <div class="form-group">
           <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" required>
+          <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  required
+                  pattern=""
+                  title="">
         </div>
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  pattern=""
+                  title="">
         </div>
 
         <div class="form-group">
           <fieldset>
             <legend>Choose a shirt color:</legend>
             <div class="form-group-fieldset">
-              <input type="radio" id="choice1" name="shirt" value="blue">
+              <input
+                      type="radio"
+                      id="choice1"
+                      name="shirt"
+                      value="blue"
+              >
               <label for="choice1">Blue</label>
             </div>
 
             <div class="form-group-fieldset">
-              <input type="radio" id="choice2" name="shirt" value="green">
+              <input
+                      type="radio"
+                      id="choice2"
+                      name="shirt"
+                      value="green"
+              >
               <label for="choice2">Green</label>
             </div>
 
             <div class="form-group-fieldset">
-              <input type="radio" id="choice3" name="shirt" value="yellow">
+              <input
+                      type="radio"
+                      id="choice3"
+                      name="shirt"
+                      value="yellow"
+              >
               <label for="choice3">Yellow</label>
             </div>
           </fieldset>
+        </div>
+
+        <div class="form-group">
+          <label for="sizing">Choose a size:</label>
+          <select id="sizing" name="size">
+            <option value="">--Please choose an option--</option>
+            <option value="ex-small">XS</option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="ex-large">XL</option>
+            <option value="ex-ex-large">XXL</option>
+
+          </select>
         </div>
       </div>
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By DAMILOLA ODUMOSU</p>
     </footer>
   </body>
 </html>
