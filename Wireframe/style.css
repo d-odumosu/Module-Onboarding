@@ -15,25 +15,25 @@ img {
 
 /* ====== Layout ====== */
 .container {
-  width: 80%;
+  width: 70%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 /* ====== Header ====== */
-.site-header {
+.header__content {
   text-align: center;
   padding: 20px;
 }
 
-.site-title {
+.header__title {
   font-weight: 900;
   font-style: italic;
   color: #c1121f;
   margin-bottom: 0;
 }
 
-.site-tagline {
+.header__tagline {
   color: #780000;
   margin-top: 0;
   font-size: 18px;
@@ -42,7 +42,7 @@ img {
 
 /* ====== Articles ====== */
 article {
-  border: 1px solid #fb8500;
+  border: 1px solid #ced4da;
 }
 
 .article-feature-text {
@@ -62,9 +62,9 @@ article {
 }
 
 /* ====== Buttons / Links ====== */
-.article-read-more {
+.article__link {
   text-decoration: none;
-  border: 1px solid #03045e;
+  border: 1px solid #ced4da;
   padding: 0.7em 1.2em;
   color: #fff;
   background: #e76f51;
@@ -72,8 +72,8 @@ article {
   display: inline-block;
 }
 
-.article-read-more:hover,
-.article-read-more:focus {
+.article__link:hover,
+.article__link:focus {
   background: #ffc300;
   color: black;
 }
@@ -85,12 +85,13 @@ article {
 }
 
 /* ====== Responsive ====== */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .article-secondary-flex {
     flex-direction: column;
   }
 
-  .article-sec {
-    width: 100%;
+  .article-sec{
+    width: 90%;
   }
+
 }
