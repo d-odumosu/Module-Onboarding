@@ -6,7 +6,7 @@
     <title>My form exercise</title>
     <meta name="description" content="Product Pick form for selecting name, email, shirt color, and size.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -21,16 +21,6 @@
 
 
     <form>
-        <!-- write your HTML here-->
-        <!--
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-
-        <!--        first and lastname (ensure it contains at least two non-space characters.)-->
-        <!--        email (make sure the email is valid. Email addresses follow a consistent pattern.)-->
-        <!--        shirt color (I must provide 3 options. How will I ensure they do not choose other colors?)-->
-        <!--        shirt size (must provide the following 6 options: XS, S, M, L, XL, XXL)-->
-
 
         <div class="form-group">
             <label for="firstname">First Name </label>
@@ -39,7 +29,7 @@
                     id="firstname"
                     name="firstname"
                     required
-                    pattern="[\p{L}]+(?:['\-][\p{L}]+)*"
+                    pattern="[\p{L}]{2,}(?:['\-][\p{L}]+)*"
                     title="enter a valid name">
         </div>
 
@@ -50,7 +40,7 @@
                     id="lastname"
                     name="lastname"
                     required
-                    pattern="[\p{L}]+(?:['\-][\p{L}]+)*"
+                    pattern="[\p{L}]{2,}(?:['\-][\p{L}]+)*"
                     title="enter a valid name">
         </div>
 
@@ -117,7 +107,6 @@
 </main>
 
 <footer>
-    <!-- change to your name-->
     <p>By DAMILOLA ODUMOSU</p>
 </footer>
 </body>
